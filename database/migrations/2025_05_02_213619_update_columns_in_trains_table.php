@@ -19,8 +19,6 @@ return new class extends Migration
             $table->dateTime('arrival_time')->change();
             $table->string('train_code', 50)->change();
             $table->integer('number_of_carriages')->change();
-            $table->boolean('is_on_time')->change();
-            $table->boolean('is_cancelled')->change();
         });
     }
 
@@ -37,8 +35,6 @@ return new class extends Migration
             $table->string('arrival_time')->change();
             $table->string('train_code')->change();
             $table->string('number_of_carriages')->change();
-            $table->boolean('is_on_time')->change();
-            $table->boolean('is_cancelled')->change();
         });
     }
 };
